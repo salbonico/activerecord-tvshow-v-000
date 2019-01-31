@@ -5,7 +5,11 @@ Show.maximum(:rating)
 end
 
 def self.most_popular_show
-Show.where(rating: 10)
+show = Show.where(rating: 10)
+end
+
+def self.lowest_rating
+Show.maximum(:rating)
 end
 
 
