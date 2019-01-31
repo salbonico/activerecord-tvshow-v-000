@@ -9,7 +9,7 @@ show = Show.where(rating: 10)
 end
 
 def self.lowest_rating
-Show.maximum(:rating)
+Show.minimum(:rating)
 end
 
 
