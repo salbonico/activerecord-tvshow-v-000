@@ -9,7 +9,7 @@ Show.find_by(Show.highest_rating)
 end
 
 def self.least_popular_show
-  Show.find_by(Show.lowest_rating)
+Show.find_by(Show.lowest_rating)
 end
 
 def self.lowest_rating
