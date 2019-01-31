@@ -5,7 +5,7 @@ Show.maximum(:rating)
 end
 
 def self.most_popular_show
-show = Show.where(rating: 10)
+Show.find_by(Show.highest_rating)
 end
 
 def self.lowest_rating
@@ -15,5 +15,10 @@ end
 def self.ratings_sum
 Show.sum(:rating)
 end
+
+def self.popular_shows
+SHow.where("rating > ?",5)
+end
+
 
 end
