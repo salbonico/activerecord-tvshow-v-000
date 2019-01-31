@@ -5,7 +5,7 @@ Show.maximum(:rating)
 end
 
 def self.most_popular_show
-Show.maximum(:rating)
+Show.where(rating: 10)
 end
 
 
