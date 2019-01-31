@@ -17,7 +17,11 @@ Show.sum(:rating)
 end
 
 def self.popular_shows
-SHow.where("rating > ?",5)
+Show.where("rating > ?",5)
+end
+
+def self.shows_by_alphabetical_order
+Show.all.order(:name)
 end
 
 
