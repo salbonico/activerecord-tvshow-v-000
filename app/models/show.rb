@@ -12,6 +12,7 @@ end
 
 def self.lowest_rating
 Show.minimum(:rating)
+binding.pry
 end
 
 def self.least_popular_show
