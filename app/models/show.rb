@@ -16,7 +16,7 @@ binding.pry
 end
 
 def self.least_popular_show
-Show.find_by(Show.lowest_rating)
+Show.find_by(rating:2)
 end
 
 
